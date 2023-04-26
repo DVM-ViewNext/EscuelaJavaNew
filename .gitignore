@@ -1,0 +1,2 @@
+# En caso de que no se quiera subir datos sensibles de la DB a github
+# src/main/resources/persistence.xml

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clase Barco</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <!-- title: Clase Barco -->
+<ul>
+<li><a href="#1-clase-barco">1. Clase Barco</a>
+<ul>
+<li><a href="#11-instalaci%C3%B3n">1.1. Instalación</a></li>
+<li><a href="#12-descripci%C3%B3n">1.2. Descripción</a></li>
+<li><a href="#13-funcionalidades">1.3. Funcionalidades</a></li>
+<li><a href="#14-uso">1.4. Uso</a></li>
+<li><a href="#15-contribuir">1.5. Contribuir</a></li>
+<li><a href="#16-historia">1.6. Historia</a></li>
+<li><a href="#17-cr%C3%A9ditos-y-atribuciones">1.7. Créditos y atribuciones</a></li>
+<li><a href="#18-license">1.8. License</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="1-clase-barco">1. Clase Barco</h1>
+<p><strong>Barco</strong></p>
+<p>Este es un proyecto Java que define la clase Barco que extiende la clase Vehiculo.</p>
+<h2 id="11-instalación">1.1. Instalación</h2>
+<p>Si hubiese un método para instalar o ejecutar el proyecto, se indicaría aquí.</p>
+<h2 id="12-descripción">1.2. Descripción</h2>
+<p>La clase Barco representa un vehículo acuático y se utiliza para instanciar objetos que contienen información sobre el color, la marca, el precio, la matrícula y el tipo de barco. La clase también tiene un método para arrancar el barco y establecer la hora de inicio del viaje.
+Funcionalidades</p>
+<h2 id="13-funcionalidades">1.3. Funcionalidades</h2>
+<p>La clase Barco tiene las siguientes funcionalidades:</p>
+<pre><code>Constructor: Crea una instancia de Barco con un color, marca, precio, matrícula y tipo de barco.
+getTipoBarco(): Devuelve el tipo de barco.
+arrancar(): Arranca el barco y establece la hora de inicio del viaje. Si el barco ya está en marcha, muestra un mensaje de aviso.
+retroceder(int metros): Retrocede el barco la cantidad de metros indicada. Si el barco no está en marcha, muestra un mensaje de aviso.
+parar(): Para el barco y muestra la hora de inicio y fin del viaje. Si el barco no está en marcha, muestra un mensaje de aviso.
+avanzar(int distancia): Avanza el barco la cantidad de metros indicada. Si el barco no está en marcha, muestra un mensaje de aviso.
+imprimirDatos(): Muestra los datos del barco.
+</code></pre>
+<pre><code class="language-java"><span class="hljs-type">Barco</span> <span class="hljs-variable">barco</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Barco</span>(<span class="hljs-string">&quot;Azul&quot;</span>, <span class="hljs-string">&quot;Marca&quot;</span>, <span class="hljs-string">&quot;5000&quot;</span>, <span class="hljs-string">&quot;1234ABC&quot;</span>, <span class="hljs-string">&quot;Tipo de Barco&quot;</span>);
+<span class="hljs-type">String</span> <span class="hljs-variable">tipoBarco</span> <span class="hljs-operator">=</span> barco.getTipoBarco();
+barco.arrancar();
+</code></pre>
+<h2 id="14-uso">1.4. Uso</h2>
+<p>TODO: Cómo se debe usar el proyecto.</p>
+<p><strong>Uso de la clase Barco</strong></p>
+<p>Para utilizar la clase Barco, primero debe instanciar un objeto pasando los argumentos adecuados al constructor. Luego, puede llamar a los métodos getTipoBarco() y arrancar() según sea necesario.</p>
+<h2 id="15-contribuir">1.5. Contribuir</h2>
+<ol>
+<li>Fork it!</li>
+<li>Crea tu feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Haz Commit de tus cambios: <code>git commit -am 'Add some feature'</code></li>
+<li>Push al branch: <code>git push origin my-new-feature</code></li>
+<li>Submit un pull request</li>
+</ol>
+<h2 id="16-historia">1.6. Historia</h2>
+<ul>
+<li>Version 0.1 (2023-04-19) - lanzamiento inicial</li>
+<li>Version 0.2 (2023-04-20) - añadido método avanzar()</li>
+<li>Version 0.3 (2023-04-21) - añadido método retroceder()</li>
+<li>Version 0.4 (2023-04-22) - añadido método parar()</li>
+<li>Version 0.5 (2023-04-23) - añadido resto de métodos</li>
+<li>Version 0.6 (2023-04-24) - Pruebas unitarias y correcciones</li>
+</ul>
+<h2 id="17-créditos-y-atribuciones">1.7. Créditos y atribuciones</h2>
+<p>Lead Developer - Antoni Garcés (@antoni_dev)
+Mentor - Blah blah (@blah_blah)</p>
+<h2 id="18-license">1.8. License</h2>
+<p>The MIT License (MIT)</p>
+<p>Copyright (c) 2015 Chris Kibble</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+        
+        
+    </body>
+    </html>
