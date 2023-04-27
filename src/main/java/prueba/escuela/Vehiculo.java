@@ -2,13 +2,16 @@ package prueba.escuela;
 
 import java.util.Date;
 
+import jakarta.persistence.MappedSuperclass;
+
 /**
  * Vehiculo.java Clase para el objecto Vehiculo
  */
+@MappedSuperclass
 public abstract class Vehiculo implements Conducible {
     protected String color;
     protected String marca;
-    protected String precio;
+    protected double precio;
     protected String matricula;
     protected int numRuedas;
     private boolean arrancado = false;
@@ -27,7 +30,7 @@ public abstract class Vehiculo implements Conducible {
      * @param matricula matricula del vehiculo
      * @param numRuedas numero de ruedas del vehiculo
      */
-    protected Vehiculo(String color, String marca, String precio, String matricula, int numRuedas) {
+    protected Vehiculo(String color, String marca, double precio, String matricula, int numRuedas) {
 
         this.numRuedas = numRuedas;
         this.color = color;
@@ -70,7 +73,7 @@ public abstract class Vehiculo implements Conducible {
      *
      * @return String precio
      */
-    public String getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
@@ -79,7 +82,7 @@ public abstract class Vehiculo implements Conducible {
      *
      * @param precio String precio
      */
-    public void setPrecio(String precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 

@@ -40,7 +40,7 @@ public class Coche extends Vehiculo {
      * @param tipoMarchas tipo de marchas del coche
      * 
      */
-    public Coche(String color, String marca, String precio, String matricula, String tipoMarchas) {
+    public Coche(String color, String marca, double precio, String matricula, String tipoMarchas) {
         super(color, marca, precio, matricula, 4); // Siempre tiene 4 ruedas si es un coche
         this.tipoMarchas = tipoMarchas;
 

@@ -13,7 +13,7 @@ import jakarta.persistence.Persistence;
  */
 public class MyApp {
 
-	private static final String PERSISTENCELOCAL_UNIT_NAME = "PERSISTENCE";
+	private static final String PERSISTENCELOCAL_UNIT_NAME = "PERSISTENCELOCAL";
 
 	/**
 	 * Pide al usuario que seleccione un vehiculo y una accion.

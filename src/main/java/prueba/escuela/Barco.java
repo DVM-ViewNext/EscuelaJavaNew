@@ -20,7 +20,7 @@ public class Barco extends Vehiculo {
      * @param matricula La matricula del Barco.
      * @param tipoBarco El tipo de Barco.
      */
-    public Barco(String color, String marca, String precio, String matricula, String tipoBarco) {
+    public Barco(String color, String marca, double precio, String matricula, String tipoBarco) {
         super(color, marca, precio, matricula, 0);
         this.tipoBarco = tipoBarco;
 

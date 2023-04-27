@@ -10,7 +10,7 @@ public class Moto extends Vehiculo {
     /**
      * contructor de la clase moto.
      */
-    public Moto(String color, String marca, String precio, String matricula, String tipoMoto) {
+    public Moto(String color, String marca, double precio, String matricula, String tipoMoto) {
         super(color, marca, precio, matricula, 2); // Una moto siempre tiene 2 ruedas
         this.tipoMoto = tipoMoto;
 

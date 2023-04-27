@@ -90,9 +90,9 @@ public class VehiculoManager {
 	 * @return {@link Coche}
 	 */
 	private Vehiculo createCoche() {
-		Coche coche = new Coche("Rojo", "Toyota", "20.000 €", "SADF12", "Manual");
+		vehiculo = new Coche("Rojo", "Toyota", 20.000, "SADF12", "Manual");
 		System.out.println("Se ha creado un vehículo de tipo Coche ");
-		return coche;
+		return vehiculo;
 	}
 
 	/**
@@ -101,7 +101,7 @@ public class VehiculoManager {
 	 * @return {@link Moto}
 	 */
 	private Vehiculo createMoto() {
-		Moto moto = new Moto("Negro", "Yamaha", "50.000 €", "YTUI78", "Motocross");
+		Moto moto = new Moto("Negro", "Yamaha", 50.000, "YTUI78", "Motocross");
 		System.out.println("Se ha creado un vehículo de tipo Moto ");
 		return moto;
 	}
@@ -112,7 +112,7 @@ public class VehiculoManager {
 	 * @return {@link Barco}
 	 */
 	private Vehiculo createBarco() {
-		Barco barco = new Barco("Rojo", "Toyota", "20.000 €", "VBNM76", "Yate");
+		Barco barco = new Barco("Rojo", "Toyota", 20.000, "VBNM76", "Yate");
 		System.out.println("Se ha creado un vehículo de tipo Barco ");
 		return barco;
 	}
